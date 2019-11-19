@@ -1,0 +1,21 @@
+{
+  "main": "dist",
+  "private": true,
+  "scripts": {
+    "test": "npm run build && npm run lint",
+    "lint": "tslint --project . -t verbose",
+    "build": "tsc -p .",
+    "watch": "tsc -p . -w --preserveWatchOutput --inlineSourceMap",
+    "start": "tabris serve -a -w"
+  },
+  "dependencies": {
+    "bson": "^4.0.2",
+    "tabris": "^3.2.1",
+    "util": "^0.12.1",
+    "ws": "^7.2.0"
+  },
+  "devDependencies": {
+    "tslint": "^6.0.0-beta0",
+    "typescript": "~3.3.4000"
+  }
+}
